@@ -15,6 +15,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	char *loc = setlocale(LC_ALL, "");
 
 	// レシピデータの生成
+	// RecipeDataを生成する方式に切り替えてください
 	std::wstring recipeTitle(_T("オムライス"));
 
 	// レシピの出力
