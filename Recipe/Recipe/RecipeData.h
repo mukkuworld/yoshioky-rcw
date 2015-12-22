@@ -15,9 +15,14 @@ public:
 
 	const StringVector& getTitles() const;
 
+	/** @brief	データをファイルへ保存します。 */
+	void save();
+
 private:
 	void buildTitlesFromFile(const std::wstring& filePath);
 
 private:
 	StringVector m_titles;
+	std::wstring m_filePath;	//!< データファイルの完全パス
+
 };
